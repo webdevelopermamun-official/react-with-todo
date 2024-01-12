@@ -1,0 +1,104 @@
+.sidebar_wraper{
+    .main_content{
+        h4{
+            font-size: 20px;
+            color:#333;
+            line-height:20px;
+            padding:5px 0 10px;
+            border-bottom:1px solid #eaeaea;
+        }
+        p{
+            color: #666666;
+            padding:5px 0 10px;
+            border-bottom:1px solid #eaeaea;
+        }
+        b{
+            color: #ff0202;
+            padding: 10px 0;
+            display: inline-block;
+
+        }
+    }
+
+    .add_new_task{
+        margin: 20px 0;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 10px 15px;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: all 0.3s ease-in-out;
+        border: var(--todo-border);
+        color: rgba(95, 95, 95, 0.7019607843);
+
+        &:hover{
+            background-color: var(--todo-hover-bd-color);
+        }
+    }
+    .upload_new_task{
+        border: var(--todo-border);
+        padding: 10px;
+        border-radius: 5px;
+
+        form{
+            input, textarea{
+                width: 100%;
+                font-size: 16px;
+                padding: 6px 10px;
+                border: 1px solid #bcbcbc;
+                transition: all 0.5s;
+                border-radius: 5px;
+                &:focus{
+                    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                    border: 1px solid transparent;
+                }
+            }
+            textarea{
+                height: 150px;
+            }
+            .react-datepicker-wrapper{
+                display: block;
+            }
+            .form_submited{
+                cursor: pointer;
+                font-weight: bold;
+                background-color: green;
+                color: white;
+                border: none;
+                padding: 8px 30px;
+                border-radius: 5px;
+                font-size: 14px;
+                transition: all .5s;
+                text-align: center;
+                &:active{
+                    transform: scale(.9);
+                }
+                &:hover{
+                    opacity: .7;
+    
+                }
+    
+            }
+            .cancel_button{
+                background-color: #ff0202;
+                cursor: pointer;
+                font-weight: bold;
+                color: white;
+                border: none;
+                padding: 8px 30px;
+                border-radius: 5px;
+                font-size: 14px;
+                transition: all .5s;
+                text-align: center;
+                &:active{
+                    transform: scale(.9);
+                }
+                &:hover{
+                    opacity: .7;
+    
+                }
+            }
+        }
+    }
+}

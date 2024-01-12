@@ -1,0 +1,163 @@
+.todays_task,
+.form_data{
+    padding: 20px 15px;
+    border: var(--todo-border);
+    border-radius: 10px;
+
+    .add_new_task{
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 10px 15px;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: all .3s ease-in-out;
+        border: var(--todo-border);
+        color: #5f5f5fb3;
+
+        &:hover{
+            background-color: var(--todo-hover-bd-color) ;
+        }
+    }
+    form{
+        padding: 30px 40px;
+        box-shadow: 0px 4px 8px -2px rgba(9, 30, 66, 0.25), 0px 0px 0px 1px rgba(9, 30, 66, 0.08);
+        border-radius: 10px;
+        margin-bottom: 20px;
+        position: relative;
+
+        .react-datepicker-wrapper{
+            display: block !important;
+        }
+        .close_icon{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            width: 40px;
+            height: 40px;
+            box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px 0px, rgba(0, 0, 0, 0.09) 0px 4px 2px 0px, rgba(0, 0, 0, 0.09) 0px 8px 4px 0px, rgba(0, 0, 0, 0.09) 0px 16px 8px 0px, rgba(0, 0, 0, 0.09) 0px 32px 16px 0px;
+            text-align: center;
+            line-height: 40px;
+            color: #fff;
+            border-radius: 50%;
+            cursor: pointer;
+
+            &:hover{
+                background-color: rgb(237, 125, 49);
+                
+            }
+        }
+
+        &:hover{
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 2px 8px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1);
+        }
+
+        label{
+            font-weight: normal;
+            color: #606060;
+            display: block;
+            padding-bottom: 5px;
+        }
+        input, textarea, select{
+            width: 100%;
+            font-size: 16px;
+            padding: 6px 10px;
+            border: 1px solid #bcbcbc;
+            transition: all .5s;
+            border-radius: 5px;
+
+            &:focus{
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                border: 1px solid transparent;
+            }
+        }
+        textarea{
+            height: 200px;
+        }
+        .task_start_end{
+            display: flex;
+            gap: 20px;
+            
+
+            .task_time{
+                width: 50%;
+                flex-direction: column;
+                
+                input{
+                    width: 100%;
+                }
+            }
+        }
+        button{
+            cursor: pointer;
+            font-weight: bold;
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 13px 60px;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: all .5s;
+            text-align: center;
+            &:active{
+                transform: scale(.9);
+            }
+            &:hover{
+                opacity: .7;
+
+            }
+
+        }
+    }
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: var(--todo-border);
+    border-radius: 5px;
+    padding: 10px;
+
+
+    .side_header{
+        margin-bottom: 20px;
+        button{
+            font-size: 20px;
+            width: 40px;
+            height: 40px;
+            box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px 0px, rgba(0, 0, 0, 0.09) 0px 4px 2px 0px, rgba(0, 0, 0, 0.09) 0px 8px 4px 0px, rgba(0, 0, 0, 0.09) 0px 16px 8px 0px, rgba(0, 0, 0, 0.09) 0px 32px 16px 0px;
+            text-align: center;
+            line-height: 40px;
+            color: #fff;
+            border-radius: 50%;
+            cursor: pointer;
+
+            &:hover{
+                background-color: rgb(237, 125, 49);
+                
+            }
+            
+        }
+    }
+
+    .sidebar_content{
+        h2{
+            font-size: 18px;
+            margin-bottom: 5px;
+            color: #606060;
+        }
+        h3{
+            font-weight: normal;
+            font-size: 18px;
+            color:#a0a0a0;
+        }
+        p{
+            font-size: 13px;
+            text-align: justify;
+            color:#a0a0a0;
+        }
+    }
+}
